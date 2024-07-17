@@ -9,7 +9,7 @@ def convert_text(text):
 def process_item(path, is_file):
     directory = os.path.dirname(path)
     base_name = os.path.basename(path)
-    converted_dir = os.path.join(directory, '转换后的文件')
+    converted_dir = os.path.join(directory, 'converted_files')
     os.makedirs(converted_dir, exist_ok=True)
     
     if is_file:
