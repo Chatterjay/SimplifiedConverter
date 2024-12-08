@@ -37,8 +37,8 @@ jobs:
             # 打包 exe
             - name: Package
               run: |
-                  pyinstaller -F slc.py
-                  pyinstaller -F slc.py
+                  pyinstaller --onefile slc.py 
+                  pyinstaller --onefile slc.py 
             # 上传结果为 artifact
             - name: Upload results
               uses: actions/upload-artifact@v4.3.3
